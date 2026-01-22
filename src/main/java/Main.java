@@ -15,5 +15,5 @@ import com.cts.inb.pages.YamahaBikes;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         // Fill Code Here
-    }
+    } 
 }
