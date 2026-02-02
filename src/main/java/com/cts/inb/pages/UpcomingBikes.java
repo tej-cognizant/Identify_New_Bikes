@@ -19,10 +19,17 @@ public class UpcomingBikes extends BasePage {
     }
 
     public void clickBikesUnder2Lakhs() throws InterruptedException {
-        // Fill Code Here
+        scrollByPercentage(0.20);
+        wait.until(ExpectedConditions.elementToBeClickable(bikesUnder2LakhsLink));
+        bikesUnder2LakhsLink.click();
+        Thread.sleep(2000);
     }
 
     public void clickYamahaBrand() throws InterruptedException {
-        // Fill Code Here
+        scrollByPercentage(0.50);
+        Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(yamahaLink));
+        yamahaLink.click();
+        Thread.sleep(3000);
     }
 }
