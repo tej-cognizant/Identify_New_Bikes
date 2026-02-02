@@ -18,10 +18,7 @@ public class Main {
         // Disable browser notifications
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("profile.default_content_setting_values.notifications", 2);
-        options.setExperimentalOption("prefs", prefs);
- 
+        
         // Launch browser
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
